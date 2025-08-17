@@ -7,10 +7,10 @@ website_link = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 #border: controls how many boxes thick the border should be
 qr = qrcode.QRCode(version = 1, box_size = 5, border = 5 )
 #Data is added to the QR code
-qr.add_data()
+qr.add_data(website_link)
 #Qr code is generated
 qr.make()
 #save QR code in pillow object
-image = qr.make_image(fill_color = ' black', back_color= ' white')
+img = qr.make_image(fill_color = 'black', back_color= 'white')
 #store and save the file
-image.save('youtubeQr.png')
+img.save('youtubeQr.png')
