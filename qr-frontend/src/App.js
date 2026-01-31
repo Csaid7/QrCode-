@@ -2,48 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import { TestimonialsSection } from './components/ui/testimonials-with-marquee';
 
-const testimonials = [
-  {
-    author: {
-      name: "Emma Thompson",
-      handle: "@emmaai",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face"
-    },
-    text: "This QR code generator has transformed how we share links. The speed and simplicity are unprecedented."
-  },
-  {
-    author: {
-      name: "David Park",
-      handle: "@davidtech",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
-    },
-    text: "The best QR code generator I've used. Clean interface and instant results. Perfect for my business cards."
-  },
-  {
-    author: {
-      name: "Sofia Rodriguez",
-      handle: "@sofiaml",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face"
-    },
-    text: "Finally, a QR code tool that actually works flawlessly! I use it daily for my marketing campaigns."
-  },
-  {
-    author: {
-      name: "James Wilson",
-      handle: "@jameswdev",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
-    },
-    text: "Simple, fast, and reliable. This is exactly what a QR code generator should be."
-  },
-  {
-    author: {
-      name: "Maya Chen",
-      handle: "@mayatech",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
-    },
-    text: "I've recommended this to all my colleagues. The download feature works perfectly every time."
-  }
-];
+
 
 function App() {
   const [url, setUrl] = useState('');
